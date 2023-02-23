@@ -1,0 +1,8 @@
+{% extends "layout.html"%}
+{% block content %}
+    <h1>Person Information</h1>
+    {% for post in posts%}
+    <h3>{{ post. author }}</h3>
+    <p>{{ post.content }}</p>
+    {% endfor %}
+{% endblock content%}
